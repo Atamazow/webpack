@@ -1,7 +1,6 @@
 {
   "name": "01_webpack",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "acorn": "^8.8.2",
@@ -61,6 +60,8 @@
     "pkg-dir": "^4.2.0",
     "punycode": "^2.3.0",
     "randombytes": "^2.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rechoir": "^0.8.0",
     "resolve": "^1.22.1",
     "resolve-cwd": "^3.0.0",
@@ -89,9 +90,16 @@
   },
   "devDependencies": {
     "@types/node": "^18.15.3",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
     "@types/webpack": "^5.28.0",
     "@types/webpack-dev-server": "^4.7.2",
+    "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.8.6",
+    "sass": "^1.59.3",
+    "sass-loader": "^13.2.1",
+    "style-loader": "^3.3.2",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.9.1",
     "typescript": "^4.5.5",
@@ -106,5 +114,14 @@
     "build:dev": "webpack --env mode=development"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atamazow/webpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Atamazow/webpack/issues"
+  },
+  "homepage": "https://github.com/Atamazow/webpack#readme",
+  "description": ""
 }
