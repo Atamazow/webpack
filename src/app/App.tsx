@@ -5,6 +5,7 @@ import { UseTheme } from "app/providers/ThemeProvider";
 import {AboutPage} from "pages/AboutPage";
 import {MainPage} from "pages/MainPage";
 import "./styles/index.scss";
+import {AppRouter} from "app/providers/router";
 
 
 function App() {
@@ -15,12 +16,7 @@ function App() {
       <br />
       <Link to={"/"}>Главная страница</Link>
       <Link to={"/about"}>О нас</Link>
-      <Suspense fallback={<div>...Loading</div>}>
-        <Routes>
-          <Route path="/about" element={<AboutPage/>} />
-          <Route path="/" element={<MainPage/>} />
-        </Routes>
-      </Suspense>
+        <AppRouter/>
     </div>
   );
 }
